@@ -124,7 +124,7 @@ button {
   border: none;
 }
 
-.tri-state-toggle {
+.themes-toggle {
   background-color: var(--theme-switcher-background);
   align-self: center;
   display: flex;
