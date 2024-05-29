@@ -54,7 +54,7 @@ function Calculator(expression) {
 }
 
 let calc_buttons = document.querySelector(".calc-buttons");
-let display = document.querySelector(".display__container");
+let display = document.querySelector(".display-container");
 let equals = document.querySelector("#equals");
 let reset = document.querySelector("#reset");
 let del = document.querySelector("#del");
@@ -84,7 +84,7 @@ reset.addEventListener("click", () => {
 });
 
 del.onclick = function () {
-  if (display.innerText == "Infinity") {
+  if (display.innerText == "Infinity" || display.innerText == "undefined") {
     display.innerText = "";
   } else {
     display.innerText = display.innerText.substring(
