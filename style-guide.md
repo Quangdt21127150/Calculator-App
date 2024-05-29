@@ -7,6 +7,8 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
 ## Colors
 
 ### Theme 1
@@ -37,17 +39,17 @@ The designs were created to the following widths:
 
 #### Backgrounds
 
-Light gray (main background): hsl(0, 0%, 90%)
-Grayish red (toggle background, keypad background): hsl(0, 5%, 81%)
-Very light gray (screen background): hsl(0, 0%, 93%)
+- Light gray (main background): hsl(0, 0%, 90%)
+- Grayish red (toggle background, keypad background): hsl(0, 5%, 81%)
+- Very light gray (screen background): hsl(0, 0%, 93%)
 
 #### Keys
 
 - Dark moderate cyan (key background): hsl(185, 42%, 37%)
 - Very dark cyan (key shadow): hsl(185, 58%, 25%)
 
-Orange (key background, toggle): hsl(25, 98%, 40%)
-Dark orange (key shadow): hsl(25, 99%, 27%)
+- Orange (key background, toggle): hsl(25, 98%, 40%)
+- Dark orange (key shadow): hsl(25, 99%, 27%)
 
 - Light grayish yellow (key background): hsl(45, 7%, 89%)
 - Dark grayish orange (key shadow): hsl(35, 11%, 61%)
@@ -65,11 +67,12 @@ Dark orange (key shadow): hsl(25, 99%, 27%)
 - Very dark violet (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
 
 #### Keys
-Dark violet (key background): hsl(281, 89%, 26%)
+
+- Dark violet (key background): hsl(281, 89%, 26%)
 - Vivid magenta (key shadow): hsl(285, 91%, 52%)
 
-Pure cyan (key background, toggle): hsl(176, 100%, 44%)
-Soft cyan (key shadow): hsl(177, 92%, 70%)
+- Pure cyan (key background, toggle): hsl(176, 100%, 44%)
+- Soft cyan (key shadow): hsl(177, 92%, 70%)
 
 - Very dark violet (key background): hsl(268, 47%, 21%)
 - Dark magenta (key shadow): hsl(290, 70%, 36%)
@@ -90,3 +93,5 @@ Soft cyan (key shadow): hsl(177, 92%, 70%)
 
 - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
 - Weights: 700
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
