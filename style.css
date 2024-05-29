@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.blue {
+  --main-background: #3b4664;
+  --keypad-background: #252b44;
+  --screen-background: #181f32;
+  --key-background: #e9e2da;
+  --key-background-hover: hsl(28, 16%, 65%);
+  --theme-switcher-button: #f06e5a;
+  --theme-switcher-background: #242c43;
+  --equals-key: #f96c5b;
+  --equals-key-shadow: #902012;
+  --text: #474b54;
+  --white: hsl(0, 0%, 100%);
+  --value: white;
+  --dif_color: #a2b3e1;
+}
+
+.light-gray {
+  --main-background: hsl(0, 0%, 90%);
+  --keypad-background: #e5e4e0;
+  --screen-background: hsl(0, 0%, 93%);
+  --key-background: hsl(0, 5%, 81%);
+  --key-background-hover: hsl(35, 11%, 61%);
+  --theme-switcher-button: hsl(25, 98%, 40%);
+  --theme-switcher-background: hsl(0, 5%, 81%);
+  --equals-key: hsl(25, 98%, 40%);
+  --equals-key-shadow: hsl(25, 99%, 27%);
+  --text: #36362d;
+  --value: #36362d;
+  --white: hsl(0, 0%, 100%);
+  --dif_color: #61b2bc;
+}
+
+.dark-violet {
+  --main-background: hsl(268, 75%, 9%);
+  --keypad-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+  --key-background: hsl(268, 47%, 21%);
+  --key-background-hover: hsl(290, 70%, 36%);
+  --theme-switcher-button: hsl(176, 100%, 44%);
+  --theme-switcher-background: hsl(268, 71%, 12%);
+  --equals-key: hsl(176, 100%, 44%);
+  --equals-key-shadow: #94fff9;
+  --text: #fdea42;
+  --value: #fdea42;
+  --white: hsl(0, 0%, 100%);
+  --dif_color: hsl(290, 70%, 36%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--main-background);
+  transition: background-color 0.5s ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 60%;
+  min-width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  color: white;
+  padding-inline: 1em;
+}
+
+.theme {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  height: max-content;
+}
+
+.theme p {
+  font-weight: 900;
+  margin-top: 1.6rem;
+}
+
+.num {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  font-size: 0.8em;
+}
+
+.num p {
+  margin: 0;
+}
+
+.button {
+  padding: 0;
+  margin: 0;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: var(--toggle-key-background);
+  cursor: pointer;
+  transition: 0.4s ease;
+  margin-bottom: 0;
+  border: none;
+}
+
+.tri-state-toggle {
+  background-color: var(--theme-switcher-background);
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.3em;
+  padding: 0.3em 0.5em;
+  border-radius: 20px;
+}
+
+.selected {
+  background-color: var(--theme-switcher-button);
+}
+
+.display__container {
+  background-color: var(--screen-background);
+  padding: 0.8em;
+  font-size: 2em;
+  text-align: end;
+  font-weight: 900;
+  color: var(--value);
+  margin-bottom: 0.5em;
+  border-radius: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.calc-buttons {
+  padding: 1em;
+  background-color: var(--keypad-background);
+  border-radius: 10px;
+}
+
+.calc-buttons button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--key-background);
+  color: var(--text);
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.calc-buttons button:hover {
+  background-color: var(--key-background-hover);
+}
+
+.dif-background {
+  background-color: var(--dif_color) !important;
+  color: var(--white) !important;
+}
+
+#equals {
+  background-color: var(--equals-key);
+  box-shadow: var(--equals-key-shadow);
+  color: var(--white);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.grid-2-span {
+  grid-column: span 2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 30%;
+    min-width: 29%;
+  }
+}

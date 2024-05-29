@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=League+Spartan:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="head">
+          <h2>calc</h2>
+          <div class="theme">
+            <p>theme</p>
+            <div class="theme_selector">
+              <div class="num">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+              </div>
+              <div class="tri-state-toggle">
+                <input
+                  class="button"
+                  type="button"
+                  name="toggle"
+                  id="blue"
+                  data-theme="blue"
+                  aria-label="Change to light theme"
+                  value=""
+                />
+                <input
+                  class="button"
+                  type="button"
+                  name="toggle"
+                  id="light_gray"
+                  data-theme="light-gray"
+                  aria-label="Change to light gray theme"
+                  value=""
+                />
+                <input
+                  class="button"
+                  type="button"
+                  name="toggle"
+                  id="dark_violet"
+                  data-theme="dark-violet"
+                  aria-label="Change to dark violet theme"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="display__container"></div>
+        <div class="grid-container calc-buttons">
+          <button class="numbers" id="seven">7</button>
+          <button class="numbers" id="eight">8</button>
+          <button class="numbers" id="nine">9</button>
+          <button id="del" class="dif-background">DEL</button>
+          <button class="numbers" id="four">4</button>
+          <button class="numbers" id="five">5</button>
+          <button class="numbers" id="six">6</button>
+          <button class="operand" id="plus">+</button>
+          <button class="numbers" id="one">1</button>
+          <button class="numbers" id="two">2</button>
+          <button class="numbers" id="three">3</button>
+          <button class="operand" id="minus">-</button>
+          <button class="numbers" id="dot">.</button>
+          <button class="numbers" id="zero">0</button>
+          <button class="operand" id="divide">/</button>
+          <button class="operand" id="multiply">&times</button>
+          <button id="reset" class="grid-2-span dif-background">RESET</button>
+          <button id="equals" class="grid-2-span">=</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
